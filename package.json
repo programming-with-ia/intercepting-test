@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rimraf .next && next dev",
     "check": "next lint && tsc --noEmit",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
+    "dev:new": "rimraf .next && pnpm dev",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "preview": "next build && next start",
