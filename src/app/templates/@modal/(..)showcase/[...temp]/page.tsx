@@ -4,7 +4,7 @@ import React from "react";
 
 async function Page({ params }: { params: { temp: string[] } }) {
   const { temp } = await params;
-  console.log(temp);
+  console.log("intercepted", temp);
   return (
     <PageDialog>
       <div className="text-lg text-red-400">
